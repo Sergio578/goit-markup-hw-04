@@ -82,8 +82,25 @@ header>.container :nth-child(1)>nav>ul>li {
 }
 
 .list-item1 {
-  width: 303px;
   display: flex;
+}
+
+.sobre {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  border: 2px soloid red;
+}
+
+
+.phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.phone:hover {
+  color: var(--special);
 }
 
 .link-webStudio {
@@ -128,8 +145,8 @@ header>.container :nth-child(1)>nav>ul>li {
 
 .number {
   display: inline-block;
-  width: 118px;
-  margin-left: 50px;
+  width: 138px;
+  /* margin-left: 50px; */
   font-weight: 500;
 }
 
@@ -137,6 +154,11 @@ header>.container :nth-child(1)>nav>ul>li {
   color: var(--gray);
   font-size: 14px;
   line-height: 1.7;
+  margin-right: 20px;
+}
+
+.link-contact:hover {
+  color: var(--special);
 }
 
 /* estilos titulo principal y boton */
@@ -243,6 +265,7 @@ header>.container :nth-child(1)>nav>ul>li {
   width: 373.16px;
 }
 
+
 /* estilos equipo de trabajo  */
 .title-people {
   font-weight: 700;
@@ -257,7 +280,7 @@ header>.container :nth-child(1)>nav>ul>li {
   height: 566px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 94px; */
+  margin-bottom: 59px;
   background-color: #f5f4fa;
   display: flex;
   flex-direction: column;
@@ -272,7 +295,9 @@ header>.container :nth-child(1)>nav>ul>li {
 
 .images-people {
   width: 270px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
+
 
 /* estilos para el pie de pagina */
 
@@ -306,6 +331,41 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* ************************************************** */
+.clientes {
+  display: flex;
+  justify-content: center;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 44px;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+
+.section-icon {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 151px;
+}
+
+/* .icon-1 {
+  margin-right: 30px;
+} */
 
 /* +++++++++++++++++++++++++++++++++++++++++++++ */
 /* estilos contenido pagina portafolio */
@@ -401,5 +461,15 @@ footer {
   top: calc(50% - 36px / 2 - 359px);
   margin: 0;
 }
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++ */
