@@ -85,22 +85,13 @@ header>.container :nth-child(1)>nav>ul>li {
   display: flex;
 }
 
-.sobre {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  border: 2px soloid red;
-}
-
-
-.phone {
-  width: 10px;
-  height: 16px;
+.sobre-phone {
+  fill: #757575;
   margin-right: 10px;
 }
 
-.phone:hover {
-  color: var(--special);
+.sobre-phone:hover {
+  fill: var(--special);
 }
 
 .link-webStudio {
@@ -265,7 +256,6 @@ header>.container :nth-child(1)>nav>ul>li {
   width: 373.16px;
 }
 
-
 /* estilos equipo de trabajo  */
 .title-people {
   font-weight: 700;
@@ -277,7 +267,7 @@ header>.container :nth-child(1)>nav>ul>li {
 }
 
 .section-equipment {
-  height: 566px;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 59px;
@@ -294,10 +284,35 @@ header>.container :nth-child(1)>nav>ul>li {
 }
 
 .images-people {
-  width: 270px;
-  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
+.card-people {
+  position: relative;
+  left: 20px;
+  bottom: 65px;
+}
+
+.border {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  /* background-color: red; */
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.border:hover{
+  background-color: var(--special);
+}
+
+.box {
+  fill: #757575;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.box:hover{
+  fill: #ffffff;
+}
 
 /* estilos para el pie de pagina */
 
@@ -307,6 +322,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .webstudio {
@@ -322,6 +338,10 @@ footer {
   color: #ffffff;
 }
 
+.footer-end {
+  margin-left: 153px;
+}
+
 .list-footer {
   width: 231px;
   margin-left: 215px;
@@ -332,16 +352,33 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ************************************************** */
-.clientes {
-  display: flex;
-  justify-content: center;
+.networks-social {
+  position: absolute;
+  left: 560px;
+  top: 64px;
+  margin-left: 70px;
+  fill: rgba(255, 255, 255, 0.1);
 }
+
+.social {
+  margin-left: 10px;
+}
+
+.social:hover {
+  fill: var(--special);
+}
+
+.title-networks {
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+/* ************************************************** */
 
 .iconos {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -355,17 +392,29 @@ footer {
   color: var(--black);
 }
 
-
 .section-icon {
   width: 1170px;
-  display: flex;
-  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 151px;
 }
 
-/* .icon-1 {
-  margin-right: 30px;
-} */
+.client {
+  display: flex;
+  justify-content: space-between;
+  fill: #AFB1B8;
+}
+
+.item-client {
+  border-radius: 4px;
+}
+
+.item-client:hover {
+  fill: var(--special);
+  border: 1px solid var(--special);
+  border-radius: 4px;
+}
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++ */
 /* estilos contenido pagina portafolio */
@@ -461,15 +510,17 @@ footer {
   top: calc(50% - 36px / 2 - 359px);
   margin: 0;
 }
+/* .circle-group{
+  fill: #2196f3;
 
-.redes-sociales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+} */
 
+/* .................. revisar */
+/* .item-1:hover {
+  border: 1px solid var(--special);
+  border-radius: 4px;
 }
 
-
-
-
-/* +++++++++++++++++++++++++++++++++++++++++++++ */
+.item-2:hover {
+  fill: var(--special);
+} */
