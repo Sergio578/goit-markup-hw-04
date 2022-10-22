@@ -85,15 +85,6 @@ header>.container :nth-child(1)>nav>ul>li {
   display: flex;
 }
 
-.sobre-phone {
-  fill: #757575;
-  margin-right: 10px;
-}
-
-.sobre-phone:hover {
-  fill: var(--special);
-}
-
 .link-webStudio {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   display: inline-block;
@@ -130,26 +121,38 @@ header>.container :nth-child(1)>nav>ul>li {
 
 .email {
   display: inline-block;
-  width: 135px;
+  width: 155px;
   font-weight: 500;
 }
 
 .number {
   display: inline-block;
   width: 138px;
-  /* margin-left: 50px; */
+  margin-left: 30px;
   font-weight: 500;
 }
+
 
 .link-contact {
   color: var(--gray);
   font-size: 14px;
   line-height: 1.7;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.sobre-phone {
+  fill: #757575;
+  margin-right: 10px;
+  font-weight: 500;
 }
 
 .link-contact:hover {
   color: var(--special);
+}
+
+.link-contact:hover .sobre-phone {
+  fill: var(--special);
+
 }
 
 /* estilos titulo principal y boton */
@@ -230,6 +233,16 @@ header>.container :nth-child(1)>nav>ul>li {
   margin-left: 0;
 }
 
+/* .item-1:hover {
+  border: 1px solid var(--special);
+  border-radius: 4px;
+  fill: var(--special);
+} */
+
+/* .item-1:hover.item-2 {
+  fill: var(--special);
+} */
+
 /* estilos a qué nos dedicamos */
 .title-images {
   font-weight: 700;
@@ -285,23 +298,30 @@ header>.container :nth-child(1)>nav>ul>li {
 
 .images-people {
   position: relative;
+  border-radius: 0px 0px 4px 4px;
+  /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+  /* cursor: pointer; */
+  box-shadow: rgb(17 17 17) 0px 2px 9px 0px;
+  /* box-shadow: inset 10px 0 20px 0 #111; */
 }
 
 .card-people {
   position: relative;
   left: 20px;
   bottom: 65px;
+
 }
 
 .border {
   display: inline-block;
   width: 44px;
   height: 44px;
-  /* background-color: red; */
   border-radius: 50%;
   margin-left: 10px;
+  cursor: pointer;
 }
-.border:hover{
+
+.border:hover {
   background-color: var(--special);
 }
 
@@ -310,7 +330,8 @@ header>.container :nth-child(1)>nav>ul>li {
   margin-top: 12px;
   margin-left: 12px;
 }
-.box:hover{
+
+.border:hover .social-item {
   fill: #ffffff;
 }
 
@@ -362,6 +383,7 @@ footer {
 
 .social {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .social:hover {
@@ -403,6 +425,7 @@ footer {
   display: flex;
   justify-content: space-between;
   fill: #AFB1B8;
+  cursor: pointer;
 }
 
 .item-client {
@@ -510,17 +533,3 @@ footer {
   top: calc(50% - 36px / 2 - 359px);
   margin: 0;
 }
-/* .circle-group{
-  fill: #2196f3;
-
-} */
-
-/* .................. revisar */
-/* .item-1:hover {
-  border: 1px solid var(--special);
-  border-radius: 4px;
-}
-
-.item-2:hover {
-  fill: var(--special);
-} */
